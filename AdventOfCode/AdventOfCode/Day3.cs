@@ -89,26 +89,14 @@ namespace AdventOfCode
         {
             var length = int.Parse(instruction.Substring(1));
             var result = new List<Point>(length);
-            Func<Point, Point> traversalFunction;
-            switch (instruction[0])
+            Func<Point, Point> traversalFunction = (instruction[0]) switch
             {
-                case 'R':
-                    traversalFunction = p => new Point(p.X + 1, p.Y);
-                    break;
-                case 'U':
-                    traversalFunction = p => new Point(p.X, p.Y + 1);
-                    break;
-                case 'L':
-                    traversalFunction = p => new Point(p.X - 1, p.Y);
-                    break;
-                case 'D':
-                    traversalFunction = p => new Point(p.X, p.Y - 1);
-                    break;
-                default:
-                    traversalFunction = p => p;
-                    break;
-            }
-
+                'R' => p => new Point(p.X + 1, p.Y),
+                'U' => p => new Point(p.X, p.Y + 1),
+                'L' => p => new Point(p.X - 1, p.Y),
+                'D' => p => new Point(p.X, p.Y - 1),
+                _ => p => p,
+            };
             var nextPoint = new Point(start.X, start.Y);
             for (var i = 0; i < length; i++)
             {
