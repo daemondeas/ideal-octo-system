@@ -89,7 +89,7 @@ namespace AdventOfCode
         {
             var length = int.Parse(instruction.Substring(1));
             var result = new List<Point>(length);
-            Func<Point, Point> traversalFunction = (instruction[0]) switch
+            Func<Point, Point> traversalFunction = instruction[0] switch
             {
                 'R' => p => new Point(p.X + 1, p.Y),
                 'U' => p => new Point(p.X, p.Y + 1),
