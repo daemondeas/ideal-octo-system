@@ -39,6 +39,12 @@ namespace AdventOfCode
                     case "p8":
                         Day4.EigthPuzzle(args[1]);
                         break;
+                    case "p9":
+                        Day5.NinthPuzzle(args[1]);
+                        break;
+                    case "p10":
+                        Day5.TenthPuzzle(args[1]);
+                        break;
                     default:
                         Console.WriteLine("Hello World!");
                         break;
