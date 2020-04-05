@@ -51,6 +51,52 @@ namespace AdventOfCode
                     case "p12":
                         Day6.TwelthPuzzle(args.Skip(1).ToArray());
                         break;
+                    case "p13":
+                        Day7.ThirteenthPuzzle(args[1]);
+                        break;
+                    case "p14":
+                        Day7.FourteenthPuzzle(args[1]);
+                        break;
+                    case "p15":
+                        Day8.FifteenthPuzzle(args[1]);
+                        break;
+                    case "p16":
+                        Day8.SixteenthPuzzle(args[1]);
+                        break;
+                    case "p17":
+                    case "p18":
+                        Day9.SeventeenthPuzzle(args[1]);
+                        break;
+                    case "p19":
+                        Day10.NineteenthPuzzle(args.Skip(1).ToArray());
+                        break;
+                    case "p20":
+                        Day10.TwentiethPuzzle(args.Skip(1).ToArray());
+                        break;
+                    case "p21":
+                        Day11.TwentyfirstPuzzle(args[1]);
+                        break;
+                    case "p22":
+                        Day11.TwentysecondPuzzle(args[1]);
+                        break;
+                    case "p23":
+                        Day12.TwentythirdPuzzle();
+                        break;
+                    case "p24":
+                        Day12.TwentyfourthPuzzle();
+                        break;
+                    case "p25":
+                        Day13.TwentyfifthPuzzle(args[1]);
+                        break;
+                    case "p26":
+                        Day13.TwentysixthPuzzle(args[1]);
+                        break;
+                    case "p27":
+                        Day14.TwentyseventhPuzzle();
+                        break;
+                    case "p28":
+                        Day14.TwentyeighthPuzzle();
+                        break;
                     default:
                         Console.WriteLine("Hello World!");
                         break;

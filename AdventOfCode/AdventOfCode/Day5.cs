@@ -23,11 +23,6 @@ namespace AdventOfCode
              : int.Parse(p)).ToList();
         }
 
-        private static string ArrayToIntCode(List<int> program)
-        {
-            return string.Join(',', program);
-        }
-
         private static List<int> RunIntCodeProgram(List<int> program)
         {
             var i = 0;
